@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>수원 삼성</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            margin-left: 100px;
+            margin-right: 100px; /* Adjust the left and right margins as per your preference */
+        }
+    
+        #map {
+            flex: 1;
+            height: 500px;
+            border: 4px solid pink;
+            margin-right: 20px; /* Increase the right margin as per your preference */
+        }
+    
+        #roadview {
+            flex: 1;
+            height: 500px;
+            box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+            margin-left: 20px; /* Increase the left margin as per your preference */
+        }
+    
+        #table-container {
+            margin-top: 30px; /* Add spacing between the table and the elements */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="main.html">
+            <img src="img/Suwon.gif" width="43px" height="43px" style="padding-right: 10px;"></a>
+        <h1>수원 삼성</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./introBC.html"><img src="img/Suwon.gif" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/Ulsan.gif" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/Seoul.gif" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/Jeju.gif" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/Pohang.gif" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/Daegu.gif" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/Jeonbuk.gif" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/Incheon.gif" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/Gangwon.gif" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/daejeon.svg" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/SuwonFC.gif" width="114px" height="100px"> </a></li>
+            <li><a href="./introBC.html"><img src="img/gwangju.svg" width="114px" height="100px"> </a></li>
+        </ul>
+    </nav>
+
+
+    <article>
+        <div id="container">
+            <div id="map"></div>
+            <div id="roadview"></div>
+        </div>
+
+        <table style="height: 400px; width: 100%;">
+            <tr>
+                <td><img src="./img/bi.jpg" height="300px" width="200px"></td>
+                <td><img src="./img/bchu.png" height="300px" width="200px"></td>
+                <td><img src="./img/bchu.png" height="300px" width="200px"></td>
+            </tr>
+            <tr>
+                <th>구단로고</th>
+                <th>마스코트</th>
+                <th>유니폼</th>
+            </tr>
+        </table>
+
+        <table style="height: 400px; width: 100%;">
+            <tr>
+                <th colspan="2">구단 명칭</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2">별칭</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2">홈구장</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2">창단일</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2">감독</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2">주장</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="3">우승기록</th>
+            </tr>
+            <tr>
+                <th colspan="2">K리그1</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2">FA컵</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2">AFC</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="3">구단수상</th>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+        </table>
+    </article>
+
+
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4fe8c6488c405b06e0e67f6a99cfc617"></script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(37.2864742, 127.036866),
+            level: 5
+        };
+
+        var map = new kakao.maps.Map(container, options);
+
+        var markerPosition = new kakao.maps.LatLng(37.2864742, 127.036866);
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    </script>
+    <script>
+        var roadviewContainer = document.getElementById('roadview'); //로드뷰를 표시할 div
+        var roadview = new kakao.maps.Roadview(roadviewContainer); //로드뷰 객체
+        var roadviewClient = new kakao.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
+
+        var position0 = new kakao.maps.LatLng(37.284951, 127.035784);
+
+        // 특정 위치의 좌표와 가까운 로드뷰의 panoId를 추출하여 로드뷰를 띄운다.
+        roadviewClient.getNearestPanoId(position0, 50, function (panoId) {
+            roadview.setPanoId(panoId, position0); //panoId와 중심좌표를 통해 로드뷰 실행
+        });
+    </script>
+</body>
+
+</html>
