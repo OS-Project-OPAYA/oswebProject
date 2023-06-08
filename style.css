@@ -10,6 +10,15 @@ body {
     margin: 0;
 }
 
+div.suwon {
+    background-image: url(img/suwon_b.jpg);
+    background-size: contain;
+    background-position: center;
+
+
+
+}
+
 
 img.klogo {
     width: 170px;
@@ -19,19 +28,21 @@ img.klogo {
 img.teamlogo {
     padding-left: 20px;
     float: right;
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 44px;
 }
 
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 10px 0 10px;
     overflow: hidden;
     background-color: #12388b;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 li {
@@ -64,6 +75,33 @@ li a:hover {
 }
 
 
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px; /* Adjust the left and right margins as per your preference */
+}
+
+#map {
+    flex: 1;
+    height: 500px;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+
+    margin-right: 20px; /* Increase the right margin as per your preference */
+}
+
+#roadview {
+    flex: 1;
+    height: 500px;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+    margin-left: 20px; /* Increase the left margin as per your preference */
+}
+
+#table-container {
+    margin-top: 30px; /* Add spacing between the table and the elements */
+}
 
 
 
