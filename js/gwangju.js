@@ -1,5 +1,5 @@
 
-/////////////////////////////////Áöµµ
+/////////////////////////////////ì§€ë„
 var container = document.getElementById('map');
 var options = {
     center: new kakao.maps.LatLng(37.2864742, 127.036866),
@@ -17,22 +17,22 @@ var marker = new kakao.maps.Marker({
 marker.setMap(map);
 
 
-////////////////////////////////·Îµåºä
-var roadviewContainer = document.getElementById('roadview'); //·Îµåºä¸¦ Ç¥½ÃÇÒ div
-var roadview = new kakao.maps.Roadview(roadviewContainer); //·Îµåºä °´Ã¼
-var roadviewClient = new kakao.maps.RoadviewClient(); //ÁÂÇ¥·ÎºÎÅÍ ·Îµåºä ÆÄ³ëID¸¦ °¡Á®¿Ã ·Îµåºä helper°´Ã¼
+////////////////////////////////ë¡œë“œë·°
+var roadviewContainer = document.getElementById('roadview'); //ë¡œë“œë·°ë¥¼ í‘œì‹œí•  div
+var roadview = new kakao.maps.Roadview(roadviewContainer); //ë¡œë“œë·° ê°ì²´
+var roadviewClient = new kakao.maps.RoadviewClient(); //ì¢Œí‘œë¡œë¶€í„° ë¡œë“œë·° íŒŒë…¸IDë¥¼ ê°€ì ¸ì˜¬ ë¡œë“œë·° helperê°ì²´
 
 var position0 = new kakao.maps.LatLng(37.284951, 127.035784);
 
-// Æ¯Á¤ À§Ä¡ÀÇ ÁÂÇ¥¿Í °¡±î¿î ·ÎµåºäÀÇ panoId¸¦ ÃßÃâÇÏ¿© ·Îµåºä¸¦ ¶ç¿î´Ù.
+// íŠ¹ì • ìœ„ì¹˜ì˜ ì¢Œí‘œì™€ ê°€ê¹Œìš´ ë¡œë“œë·°ì˜ panoIdë¥¼ ì¶”ì¶œí•˜ì—¬ ë¡œë“œë·°ë¥¼ ë„ìš´ë‹¤.
 roadviewClient.getNearestPanoId(position0, 50, function (panoId) {
-    roadview.setPanoId(panoId, position0); //panoId¿Í Áß½ÉÁÂÇ¥¸¦ ÅëÇØ ·Îµåºä ½ÇÇà
+    roadview.setPanoId(panoId, position0); //panoIdì™€ ì¤‘ì‹¬ì¢Œí‘œë¥¼ í†µí•´ ë¡œë“œë·° ì‹¤í–‰
 });
 
 
 
 
-////////////////////////////¿ª´ë ¼øÀ§ ±×·¡ÇÁ
+////////////////////////////ì—­ëŒ€ ìˆœìœ„ ê·¸ë˜í”„
 data = [10, 8, 12, 5, 1, 6, 12, 1];
 
 const cvs = document.getElementById("cvs");
