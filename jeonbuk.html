@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>K LEAGUE</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4fe8c6488c405b06e0e67f6a99cfc617"></script>
+    <script src="js/jeonbuk.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <a href="main.html"><img class="klogo" src="img/k1logo.png" ; /></a>
+        <a href="jeju.html"><img class="teamlogo" src="img/logo/Jeju.png" /> </a>
+        <a href="pohang.html"><img class="teamlogo" src="img/logo/Pohang.png" /></a>
+        <a href="daegu.html"><img class="teamlogo" src="img/logo/Daegu.png" /></a>
+        <a href="jeonbuk.html"><img class="teamlogo" src="img/logo/Jeonbuk.png" /></a>
+        <a href="incheon.html"><img class="teamlogo" src="img/logo/Incheon.png" /></a>
+        <a href="gangwon.html"><img class="teamlogo" src="img/logo/Gangwon.png" /></a>
+        <a href="daejeon.html"><img class="teamlogo" src="img/logo/Daejeon.png" /></a>
+        <a href="suwon.html"><img class="teamlogo" src="img/logo/Suwon.png" /></a>
+        <a href="gwangju.html"><img class="teamlogo" src="img/logo/Gwangju.png" /></a>
+        <a href="suwonFC.html"><img class="teamlogo" src="img/logo/SuwonFC.png" /></a>
+        <a href="seoul.html"><img class="teamlogo" src="img/logo/Seoul.png" /></a>
+        <a href="ulsan.html"><img class="teamlogo" src="img/logo/Ulsan.png" /></a>
+    </header>
+
+    <ul>
+        <li><a href="#home">울산</a></li>
+        <li><a href="#news">서울</a></li>
+        <li><a href="#contact">수원FC</a></li>
+        <li><a href="#contact">광주</a></li>
+        <li><a href="suwon.html">수원</a></li>
+        <li><a href="#contact">대전</a></li>
+        <li><a href="#contact">강원</a></li>
+        <li><a href="#contact">인천</a></li>
+        <li><a href="#contact">전북</a></li>
+        <li><a href="#contact">대구</a></li>
+        <li><a href="#contact">포항</a></li>
+        <li><a href="#contact">제주</a></li>
+
+
+
+    </ul>
+
+
+
+
+    <section class="page-section" style="background-image :url(img/jeonbuk_b.png);">
+        <h1 class="title">전북 현대</h1>
+        <div id="container">
+            <div id="table-container">
+                <table class="ranktable">
+                    <tr>
+                        <td class="imagetd"><img src="./img/logo/Jeonbuk.png" height="200px" width="200px"></td>
+                        <td class="imagetd"><img src="./img/jeonbuk_m.png" height="300px" width="200px"></td>
+                    </tr>
+                    <tr>
+                        <th class="rankth">구단로고</th>
+                        <th class="rankth">마스코트</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="table-container">
+                <table class="ranktable">
+                    <tr>
+                        <th class="rankth" colspan="2">구단 명칭</th>
+                        <td class="ranktd">전북 현대 모터스 축구단</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">별칭</th>
+                        <td class="ranktd">녹색 전사</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">홈구장</th>
+                        <td class="ranktd">전주 월드컵 경기장</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">창단</th>
+                        <td class="ranktd">1994년 12월 12일</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">감독</th>
+                        <td class="ranktd">단 페트레스쿠</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">주장</th>
+                        <td class="ranktd">홍정호</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="3">우승기록</th>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">k리그1</th>
+                        <td class="ranktd">2009, 2011, 2014, 2015, 2017, 2018, 2019, 2020, 2021</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">FA컵</th>
+                        <td class="ranktd">2000, 2003, 2005, 2020, 2022</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">AFC 챔피언스 리그</th>
+                        <td class="ranktd">2006, 2016</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" style="background-image :url(img/jeonbuk_b2.png);">
+        <h1 class="title">홈구장</h1>
+        <div id="container">
+            <div id="map"></div>
+            <div id="roadview"></div>
+        </div>
+    </section>
+
+    <section class="page-section" style="background-image :url(img/jeonbuk_b.png);">
+        <h1 class="title">순위</h1>
+        <div id="container">
+            <div id="playerrank">
+                <table class="ranktable">
+                    <thead>
+                        <tr>
+                            <th class="rankth">순위</th>
+                            <th class="rankth">선수명</th>
+                            <th class="rankth">출전</th>
+                            <th class="rankth">득점</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ranktd">1</td>
+                            <td class="ranktd">송민규</td>
+                            <td class="ranktd">14</td>
+                            <td class="ranktd">4</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">문선민</td>
+                            <td class="ranktd">13</td>
+                            <td class="ranktd">4</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ranktd">3</td>
+                            <td class="ranktd">백승호</td>
+                            <td class="ranktd">12</td>
+                            <td class="ranktd">3</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                        <tr>
+                            <th class="rankth">순위</th>
+                            <th class="rankth">선수명</th>
+                            <th class="rankth">출전</th>
+                            <th class="rankth">도움</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ranktd">1</td>
+                            <td class="ranktd">아마노 준</td>
+                            <td class="ranktd">11</td>
+                            <td class="ranktd">3</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">송민규</td>
+                            <td class="ranktd">14</td>
+                            <td class="ranktd">2</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">3</td>
+                            <td class="ranktd">류재민</td>
+                            <td class="ranktd">8</td>
+                            <td class="ranktd">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div id="teamrank">
+                <table class="ranktable">
+                    <thead>
+                        <tr>
+                            <th class="rankth">순위</th>
+                            <th class="rankth">팀명</th>
+                            <th class="rankth">경기</th>
+                            <th class="rankth">승</th>
+                            <th class="rankth">무</th>
+                            <th class="rankth">패</th>
+                            <th class="rankth">득실</th>
+                            <th class="rankth">승점</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="myrank">1</td>
+                            <td class="myrank">울산</td>
+                            <td class="myrank">17</td>
+                            <td class="myrank">13</td>
+                            <td class="myrank">2</td>
+                            <td class="myrank">2</td>
+                            <td class="myrank">16</td>
+                            <td class="myrank">41</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">포항</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">8</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">3</td>
+                            <td class="ranktd">4</td>
+                            <td class="ranktd">30</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">3</td>
+                            <td class="ranktd">서울</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">8</td>
+                            <td class="ranktd">4</td>
+                            <td class="ranktd">5</td>
+                            <td class="ranktd">10</td>
+                            <td class="ranktd">28</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">4</td>
+                            <td class="ranktd">제주</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">4</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">8</td>
+                            <td class="ranktd">25</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">5</td>
+                            <td class="ranktd">대전</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">4</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">-1</td>
+                            <td class="ranktd">25</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">광주</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">3</td>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">24</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">전북</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">3</td>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">24</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">8</td>
+                            <td class="ranktd">대구</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">5</td>
+                            <td class="ranktd">-1</td>
+                            <td class="ranktd">24</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ranktd">9</td>
+                            <td class="ranktd">인천</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">4</td>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">-5</td>
+                            <td class="ranktd">19</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">10</td>
+                            <td class="ranktd">수원FC</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">5</td>
+                            <td class="ranktd">3</td>
+                            <td class="ranktd">9</td>
+                            <td class="ranktd">-14</td>
+                            <td class="ranktd">18</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">11</td>
+                            <td class="ranktd">강원</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">9</td>
+                            <td class="ranktd">-11</td>
+                            <td class="ranktd">12</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">12</td>
+                            <td class="ranktd">수원</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">13</td>
+                            <td class="ranktd">-14</td>
+                            <td class="ranktd">8</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="page-section" style="background-image :url(img/jeonbuk_b2.png);">
+        <h1 class="title">구단 역대 순위</h1>
+        <div id="cvscontainer">
+            <canvas id='cvs'></canvas>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 K리그. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

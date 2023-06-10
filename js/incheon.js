@@ -33,7 +33,7 @@ roadviewClient.getNearestPanoId(position0, 50, function (panoId) {
 
 
 ////////////////////////////역대 순위 그래프
-data = [6, 8, 6, 7, 11, 6];
+data = [8, 10, 9, 9, 10, 11, 8, 4];
 
 const cvs = document.getElementById("cvs");
 const ctx = cvs.getContext("2d");
@@ -94,7 +94,7 @@ function draw() {
     ctx.textBaseline = "top";
     for (i = 1; i <= nX; ++i) {
         ctx.fillText(
-            (2016 + i).toString(),
+            (2014 + i).toString(),
             pad + i * blockWidth,
             pad + chartInnerHeight + 5
         );
