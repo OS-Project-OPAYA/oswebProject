@@ -2,13 +2,13 @@
 /////////////////////////////////지도
 var container = document.getElementById('map');
 var options = {
-    center: new kakao.maps.LatLng(37.297749, 127.0113456),
+    center: new kakao.maps.LatLng(37.2864742, 127.036866),
     level: 5
 };
 
 var map = new kakao.maps.Map(container, options);
 
-var markerPosition = new kakao.maps.LatLng(37.297749, 127.0113456);
+var markerPosition = new kakao.maps.LatLng(37.2864742, 127.036866);
 
 var marker = new kakao.maps.Marker({
     position: markerPosition
@@ -22,7 +22,7 @@ var roadviewContainer = document.getElementById('roadview'); //로드뷰를 표시할 d
 var roadview = new kakao.maps.Roadview(roadviewContainer); //로드뷰 객체
 var roadviewClient = new kakao.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
 
-var position0 = new kakao.maps.LatLng(37.296561132413366, 127.0116900977262);
+var position0 = new kakao.maps.LatLng(37.284951, 127.035784);
 
 // 특정 위치의 좌표와 가까운 로드뷰의 panoId를 추출하여 로드뷰를 띄운다.
 roadviewClient.getNearestPanoId(position0, 50, function (panoId) {
@@ -33,7 +33,7 @@ roadviewClient.getNearestPanoId(position0, 50, function (panoId) {
 
 
 ////////////////////////////역대 순위 그래프
-data = [2, 12, 6 ,7 ,8 ,2, 5, 7];
+data = [10, 8, 12, 5, 1, 6, 12, 1];
 
 const cvs = document.getElementById("cvs");
 const ctx = cvs.getContext("2d");
