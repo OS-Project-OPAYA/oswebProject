@@ -10,7 +10,24 @@ body {
     margin: 0;
 }
 
-div.suwon {
+
+.title {
+    font-size: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 80px;
+    color: #fff;
+
+}
+
+.page-section {
+    text-align: center;
+    height: fit-content;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+.suwon {
     background-image: url(img/suwon_b.jpg);
     background-size: contain;
     background-position: center;
@@ -20,16 +37,16 @@ div.suwon {
 }
 
 
-img.klogo {
+.klogo {
     width: 170px;
     height: 40px;
 }
 
-img.teamlogo {
+.teamlogo {
     padding-left: 20px;
     float: right;
     width: 60px;
-    height: 44px;
+    height: 50px;
 }
 
 
@@ -39,11 +56,11 @@ ul {
     padding: 0 10px 0 10px;
     overflow: hidden;
     background-color: #12388b;
-    position: sticky;
     top: 0;
     display: flex;
     justify-content: center;
 }
+
 
 li {
     float: left;
@@ -79,31 +96,80 @@ li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 100px;
     margin-left: 100px;
-    margin-right: 100px; /* Adjust the left and right margins as per your preference */
+    margin-right: 100px;
+
 }
 
 #map {
     flex: 1;
-    height: 500px;
+    height: 400px;
     box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+    margin-top: 130px;
 
-    margin-right: 20px; /* Increase the right margin as per your preference */
+    margin-right: 20px;
+    margin-bottom: 150px;
+    /* Increase the right margin as per your preference */
 }
 
 #roadview {
     flex: 1;
-    height: 500px;
+    height: 400px;
     box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
-    margin-left: 20px; /* Increase the left margin as per your preference */
+    margin-top: 130px;
+
+    margin-left: 20px;
+    margin-bottom: 150px;
+
+    /* Increase the left margin as per your preference */
 }
 
 #table-container {
-    margin-top: 30px; /* Add spacing between the table and the elements */
+    flex: 1;
+    display:inline-block;
+    margin-top: 100px;
+
+}
+
+#teamrank {
+    flex: 1;
+    margin-top: 100px;
+
+}
+
+#playerrank {
+    flex: 1;
+    margin-top: 100px;
+
+
 }
 
 
+.ranktable {
+    text-align: center;
+    border-spacing: 1px;
+    font-family: 'Cairo', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+
+}
+
+.ranktd {
+    padding: 10px;
+    background-color: #eee;
+}
+
+.rankth {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.myrank {
+    padding: 10px;
+    background-color: #90d1ff;
+}
 
 
 footer {
@@ -112,3 +178,8 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+#cvs {
+    margin-bottom: 100px;
+}
+

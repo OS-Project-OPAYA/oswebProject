@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>K LEAGUE</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4fe8c6488c405b06e0e67f6a99cfc617"></script>
+    <script src="js/suwon.js" defer></script>
 </head>
 
 
@@ -45,131 +47,240 @@
 
 
 
-        
-<div class="suwon">
-            <img src="img/logo/Suwon.png" width="80px" height="80px" style="padding-right: 10px;">
-        <h1 style="font-size: 50px; display: inline-block; vertical-align: middle;margin-bottom :100px;">수원 삼성</h1>
-        <div style="margin-left : 400px; margin-right : 400px;">
-            <table style="height: 400px; width: 100%;">
-                <tr>
-                    <td style="background-color: #fff;"><img src="./img/Suwon.gif" height="200px" width="200px"></td>
-                    <td style="background-color: #fff;"><img src="./img/suwon_m.png" height="300px" width="200px"></td>
-                    <td style="background-color: #fff;"><img src="./img/suwon_u.png" height="300px" width="250px"></td>
-                </tr>
-                <tr>
-                    <th class="a">구단로고</th>
-                    <th class="a">마스코트</th>
-                    <th class="a">유니폼</th>
-                </tr>
-            </table>
 
-            <table style="height: 400px; width: 100%;">
-                <tr>
-                    <th class="b" colspan="2">구단 명칭</th>
-                    <td>수원 삼성</td>
-                </tr>
-                <tr>
-                    <th class="b" colspan="2">별칭</th>
-                    <td>청백적</td>
-                </tr>
-                <tr>
-                    <th class="b" colspan="2">홈구장</th>
-                    <td>수원월드컴경기장</td>
-                </tr>
-                <tr>
-                    <th class="b" colspan="2">창단</th>
-                    <td>1995년 12월 15일</td>
-                </tr>
-                <tr>
-                    <th class="b" colspan="2">감독</th>
-                    <td>김병수</td>
-                </tr>
-                <tr>
-                    <th class="b" colspan="2">주장</th>
-                    <td>이기제</td>
-                </tr>
-                <tr>
-                    <th class="a" colspan="3">우승기록</th>
-                </tr>
-                <tr>
-                    <th class="b" colspan="2">K리그1</th>
-                    <td>1998, 1999, 2004, 2008</td>
-                </tr>
-                <tr>
-                    <th class="b" colspan="2">FA컵</th>
-                    <td>2002, 2009, 2010, 2016, 2019</td>
-                </tr>
-                <tr>
-                    <th class="b" colspan="2">AFC 챔피언스 리그</th>
-                    <td>2000-01, 2001-02</td>
-                </tr>
-                <tr>
-                    <th class="a" colspan="3">클럽 수상</th>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        2014 K리그 풀 스타디움상<br>
-                        2014 K리그 유소년 클럽상<br>
-                        2015 K리그 페어플레이상<br>
-                        2015 대한민국 스포츠산업대상 우수프로스포츠단상<br>
-                        2016 FA컵 페어플레이상<br>
-                        2017 K리그 유소년 클럽상<br>
-                        2019 K리그 유소년 클럽상<br>
-                        2019 FA컵 페어플레이상<br>
-                        2020 K리그 그린 스타디움상<br>
-                        2020 대한민국광고대상 공익광고 부문 은상<br>
-                        2021 K리그 그린 위너스상<br>
-                    </td>
-                </tr>
-            </table>
+    <section class="page-section" style="background-image :url(img/suwon_b.png);">
+        <h1 class="title">수원 삼성</h1>
+        <div id="container">
+            <div id="table-container">
+                <table class="ranktable">
+                    <tr>
+                        <td class="ranktd"><img src="./img/logo/Suwon.png" height="200px" width="200px"></td>
+                        <td class="ranktd"><img src="./img/suwon_m.png" height="300px" width="200px"></td>
+                    </tr>
+                    <tr>
+                        <th class="rankth">구단로고</th>
+                        <th class="rankth">마스코트</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="table-container">
+                <table class="ranktable">
+                    <tr>
+                        <th class="rankth" colspan="2">구단 명칭</th>
+                        <td class="ranktd">수원 삼성 블루윙즈</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">별칭</th>
+                        <td class="ranktd">청백적</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">홈구장</th>
+                        <td class="ranktd">수원월드컵경기장</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">창단</th>
+                        <td class="ranktd">1995년 12월 15일</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">감독</th>
+                        <td class="ranktd">김병수</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">주장</th>
+                        <td class="ranktd">이기제</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="3">우승기록</th>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">K리그1</th>
+                        <td class="ranktd">1998, 1999, 2004, 2008</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">FA컵</th>
+                        <td class="ranktd">2002, 2009, 2010, 2016, 2019</td>
+                    </tr>
+                    <tr>
+                        <th class="rankth" colspan="2">AFC 챔피언스 리그</th>
+                        <td class="ranktd">2000-01, 2001-02</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" style="background-image :url(img/suwon_b2.png);">
+        <h1 class="title">홈구장</h1>
+        <div id="container">
+            <div id="map"></div>
+            <div id="roadview"></div>
+        </div>
+    </section>
+
+    <section class="page-section" style="background-image :url(img/suwon_b.png);">
+        <h1 class="title">순위</h1>
+        <div id="container">
+            <div id="playerrank">
+                <table class="ranktable">
+                    <thead>
+                        <tr>
+                            <th class="rankth">순위</th>
+                            <th class="rankth">선수명</th>
+                            <th class="rankth">출전</th>
+                            <th class="rankth">득점</th>
+                            <th class="rankth">도움</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ranktd">1</td>
+                            <td class="ranktd">안병준</td>
+                            <td class="ranktd">16</td>
+                            <td class="ranktd">4</td>
+                            <td class="ranktd">0</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">김경중</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">0</td>
+                        </tr>
+
+                        <tr>
+                            <td class="ranktd">3</td>
+                            <td class="ranktd">한호강</td>
+                            <td class="ranktd">8</td>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">0</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">4</td>
+                            <td class="ranktd">아코스티</td>
+                            <td class="ranktd">9</td>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">0</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">5</td>
+                            <td class="ranktd">바사니</td>
+                            <td class="ranktd">12</td>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">0</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">이기제</td>
+                            <td class="ranktd">16</td>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div id="teamrank">
+                <table class="ranktable">
+                    <thead>
+                        <tr>
+                            <th class="rankth">순위</th>
+                            <th class="rankth">팀명</th>
+                            <th class="rankth">경기</th>
+                            <th class="rankth">승</th>
+                            <th class="rankth">무</th>
+                            <th class="rankth">패</th>
+                            <th class="rankth">득실</th>
+                            <th class="rankth">승점</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">전북</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">3</td>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">24</td>
+
+                        </tr>
+                        <tr>
+                            <td class="ranktd">8</td>
+                            <td class="ranktd">대구</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">5</td>
+                            <td class="ranktd">-1</td>
+                            <td class="ranktd">24</td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ranktd">9</td>
+                            <td class="ranktd">인천</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">4</td>
+                            <td class="ranktd">7</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">-5</td>
+                            <td class="ranktd">19</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">10</td>
+                            <td class="ranktd">수원FC</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">5</td>
+                            <td class="ranktd">3</td>
+                            <td class="ranktd">9</td>
+                            <td class="ranktd">-14</td>
+                            <td class="ranktd">18</td>
+                        </tr>
+                        <tr>
+                            <td class="ranktd">11</td>
+                            <td class="ranktd">강원</td>
+                            <td class="ranktd">17</td>
+                            <td class="ranktd">2</td>
+                            <td class="ranktd">6</td>
+                            <td class="ranktd">9</td>
+                            <td class="ranktd">-11</td>
+                            <td class="ranktd">12</td>
+                        </tr>
+                        <tr>
+                            <td class="myrank">12</td>
+                            <td class="myrank">수원</td>
+                            <td class="myrank">17</td>
+                            <td class="myrank">2</td>
+                            <td class="myrank">2</td>
+                            <td class="myrank">13</td>
+                            <td class="myrank">-14</td>
+                            <td class="myrank">8</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-        <section>
-            <div id="container" style="margin-top: 100px">
-                <div id="map"></div>
-                <div id="roadview"></div>
-            </div>
-        </section>
-        
-        <footer>
-            <div class="container">
-              <p>&copy; 2023 K리그. All rights reserved.</p>
-            </div>
-          </footer>
-        </body>
+    </section>
+
+    <section class="page-section" style="background-image :url(img/suwon_b2.png);">
+        <h1 class="title">구단 역대 순위</h1>
+        <div id="cvscontainer">
+            <canvas id='cvs'></canvas>
+        </div>
+
+    </section>
 
 
-    <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4fe8c6488c405b06e0e67f6a99cfc617"></script>
-    <script>
-        var container = document.getElementById('map');
-        var options = {
-            center: new kakao.maps.LatLng(37.2864742, 127.036866),
-            level: 5
-        };
-
-        var map = new kakao.maps.Map(container, options);
-
-        var markerPosition = new kakao.maps.LatLng(37.2864742, 127.036866);
-
-        var marker = new kakao.maps.Marker({
-            position: markerPosition
-        });
-
-        marker.setMap(map);
-    </script>
-    <script>
-        var roadviewContainer = document.getElementById('roadview'); //로드뷰를 표시할 div
-        var roadview = new kakao.maps.Roadview(roadviewContainer); //로드뷰 객체
-        var roadviewClient = new kakao.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
-
-        var position0 = new kakao.maps.LatLng(37.284951, 127.035784);
-
-        // 특정 위치의 좌표와 가까운 로드뷰의 panoId를 추출하여 로드뷰를 띄운다.
-        roadviewClient.getNearestPanoId(position0, 50, function (panoId) {
-            roadview.setPanoId(panoId, position0); //panoId와 중심좌표를 통해 로드뷰 실행
-        });
-    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 K리그. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
