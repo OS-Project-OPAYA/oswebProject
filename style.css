@@ -160,6 +160,10 @@ li a:hover {
     background-color: #eee;
 }
 
+.imagetd {
+    background-color: white;
+}
+
 .rankth {
     background-color: #333;
     color: #fff;
@@ -178,6 +182,7 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 
 #cvs {
     margin-bottom: 100px;
