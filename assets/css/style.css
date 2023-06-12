@@ -1,0 +1,357 @@
+header {
+    background-color: white;
+    align-items: center;
+    padding: 25px;
+}
+
+body {
+    margin: 0;
+    background-color: #082c0f;
+
+}
+
+
+.title {
+    font-size: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+    background-color: #222222a6;
+    padding: 10px 100px 10px 100px;
+    border-radius: 40px;
+
+}
+
+
+
+.page-section {
+    text-align: center;
+    height: fit-content;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+
+#ranking{
+    display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+}
+
+
+
+.klogo {
+    width: 170px;
+    height: 40px;
+}
+
+.teamlogo {
+    padding-left: 20px;
+    float: right;
+    width: 60px;
+    height: 50px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    overflow: hidden;
+    background-color: #082c0f;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #0055ff;
+}
+
+.active {
+    background-color: #0a0094;
+}
+
+
+
+#canvas {
+    width: 100%;
+    height: 50%;
+    /* 뷰포트의 높이에 맞게 설정합니다. */
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin : 100px 100px 100px 100px;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px; /* Adjust the left and right margins as per your preference */
+    
+}
+
+
+#map {
+    flex: 1;
+    height: 400px;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+    margin-top: 130px;
+    margin-right: 20px;
+    margin-bottom: 150px;
+    /* Increase the right margin as per your preference */
+}
+
+#roadview {
+    flex: 1;
+    height: 400px;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+    margin-top: 130px;
+
+    margin-left: 20px;
+    margin-bottom: 150px;
+
+    /* Increase the left margin as per your preference */
+}
+
+#table-container {
+    flex: 1;
+    display: inline-block;
+    margin-top: 100px;
+
+}
+
+#teamrank {
+    flex: 1;
+    margin-top: 100px;
+}
+
+#playerrank {
+    flex: 1;
+    margin-top: 100px;
+
+
+}
+
+
+.ranktable {
+    text-align: center;
+    border-spacing: 1px;
+    font-family: 'Cairo', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+
+.ranktd {
+    padding: 10px;
+    background-color: #eee;
+}
+
+.imagetd {
+    background-color: white;
+}
+
+.rankth {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.myrank {
+    padding: 10px;
+    background-color: #90d1ff;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#cvs {
+    margin-bottom: 100px;
+}
+
+
+.teamrank {
+    width: 100%;
+    border: 1px solid #fff;
+    border-spacing: 1px;
+    font-family: 'Cairo', sans-serif;
+    flex: 1;
+}
+
+.teamrank caption {
+    font-weight: bold;
+}
+
+.teamrank th,
+.teamrank td {
+    font-size: smaller;
+    padding: 10px;
+    text-align: center;
+}
+
+.teamrank th {
+    background-color: #333;
+    color: #fff;
+}
+
+.teamrank td {
+    background-color: #eee;
+    height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.teamrank2 {
+    background-color: #eee;
+    height: 40px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-logo {
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-logo img {
+    max-width: 40px;
+    max-height: 40px;
+    object-fit: contain;
+    float: left;
+}
+
+.teamname {
+    width: fit-content;
+    flex: 1;
+    text-align: left;
+
+}
+
+.tablefoot {
+    padding: 0;
+    border-bottom: 3px solid #009688;
+}
+
+.scoreranking {
+    width: 100%;
+    border: 1px solid #fff;
+    border-spacing: 1px;
+    font-family: 'Cairo', sans-serif;
+    margin: auto;
+    flex: 1;
+}
+
+.scoreranking caption {
+    font-weight: bold;
+}
+
+.scoreranking th,
+.scoreranking td {
+    padding: 10px;
+    text-align: center;
+}
+
+.scoreranking th {
+    background-color: #333;
+    color: #fff;
+}
+
+.scoreranking td {
+    background-color: #eee;
+}
+
+.scorer {
+    width: 70px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.scorer img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.logo img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.tablefoot {
+    padding: 0;
+    border-bottom: 3px solid #009688;
+}
+
+
+#imageContainer {
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#currentImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imageButton {
+    display: inline-block;
+    padding: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+}
+
+#buttonContainer {
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}

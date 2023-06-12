@@ -4,189 +4,504 @@
 <head>
     <meta charset="UTF-8">
     <title>K LEAGUE</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="js/main.js" defer></script>
+
 </head>
 
-
+    
 <body>
     <header>
-        <a href="main.html"><img class="klogo" src="img/k1logo.png" ; /></a>
-        <a href="jeju.html"><img class="teamlogo" src="img/logo/Jeju.png" /> </a>
-        <a href="pohang.html"><img class="teamlogo" src="img/logo/Pohang.png" /></a>
-        <a href="daegu.html"><img class="teamlogo" src="img/logo/Daegu.png" /></a>
-        <a href="jeonbuk.html"><img class="teamlogo" src="img/logo/Jeonbuk.png" /></a>
-        <a href="incheon.html"><img class="teamlogo" src="img/logo/Incheon.png" /></a>
-        <a href="gangwon.html"><img class="teamlogo" src="img/logo/Gangwon.png" /></a>
-        <a href="daejeon.html"><img class="teamlogo" src="img/logo/Daejeon.png" /></a>
-        <a href="suwon.html"><img class="teamlogo" src="img/logo/Suwon.png" /></a>
-        <a href="gwangju.html"><img class="teamlogo" src="img/logo/Gwangju.png" /></a>
-        <a href="suwonFC.html"><img class="teamlogo" src="img/logo/SuwonFC.png" /></a>
-        <a href="seoul.html"><img class="teamlogo" src="img/logo/Seoul.png" /></a>
-        <a href="ulsan.html"><img class="teamlogo" src="img/logo/Ulsan.png" /></a>
+        <a href="main.html"><img class="klogo" src="img/k1logo.png" /></a>
+        <a href="https://www.jeju-utd.com/" target='_blank'><img class="teamlogo" src="img/logo/Jeju.png" /> </a>
+        <a href="https://www.steelers.co.kr/" target='_blank'><img class="teamlogo" src="img/logo/Pohang.png" /></a>
+        <a href="https://daegufc.co.kr/main/" target='_blank'><img class="teamlogo" src="img/logo/Daegu.png" /></a>
+        <a href="https://hyundai-motorsfc.com/" target='_blank'><img class="teamlogo" src="img/logo/Jeonbuk.png" /></a>
+        <a href="https://www.incheonutd.com/main/index.php" target='_blank'><img class="teamlogo" src="img/logo/Incheon.png" /></a>
+        <a href="https://gangwon-fc.com//" target='_blank'><img class="teamlogo" src="img/logo/Gangwon.png" /></a>
+        <a href="https://www.dhcfc.kr/" target='_blank'><img class="teamlogo" src="img/logo/Daejeon.png" /></a>
+        <a href="http://www.bluewings.kr/" target='_blank'><img class="teamlogo" src="img/logo/Suwon.png" /></a>
+        <a href="https://www.gwangjufc.com/" target='_blank'><img class="teamlogo" src="img/logo/Gwangju.png" /></a>
+        <a href="https://suwonfc.com/" target='_blank'><img class="teamlogo" src="img/logo/SuwonFC.png" /></a>
+        <a href="https://www.fcseoul.com/" target='_blank'><img class="teamlogo" src="img/logo/Seoul.png" /></a>
+        <a href="https://www.uhfc.tv/main.php" target='_blank'><img class="teamlogo" src="img/logo/Ulsan.png" /></a>
     </header>
 
     <ul>
-        <li><a href="#home">울산</a></li>
-        <li><a href="#news">서울</a></li>
-        <li><a href="#contact">수원FC</a></li>
-        <li><a href="#contact">광주</a></li>
+        <li><a href="ulsan.html">울산</a></li>
+        <li><a href="seoul.html">서울</a></li>
+        <li><a href="suwonfc.html">수원FC</a></li>
+        <li><a href="gwangju.html">광주</a></li>
         <li><a href="suwon.html">수원</a></li>
-        <li><a href="#contact">대전</a></li>
-        <li><a href="#contact">강원</a></li>
-        <li><a href="#contact">인천</a></li>
-        <li><a href="#contact">전북</a></li>
-        <li><a href="#contact">대구</a></li>
-        <li><a href="#contact">포항</a></li>
-        <li><a href="#contact">제주</a></li>
-
-
-
+        <li><a href="daejeon.html">대전</a></li>
+        <li><a href="gangwon.html">강원</a></li>
+        <li><a href="incheon.html">인천</a></li>
+        <li><a href="jeonbuk.html">전북</a></li>
+        <li><a href="daegu.html">대구</a></li>
+        <li><a href="pohang.html">포항</a></li>
+        <li><a href="jeju.html">제주</a></li>
     </ul>
 
 
     <div><canvas id="canvas"></canvas></div>
-    <div></div>
-
-    <footer></footer>
-    <div>
-</body>
 
 
 
+    <div class="maincontainer">
+        <section style="width: 25vw;">
+            <h2>경기일정</h2>
+            <div id="buttonContainer" style="color : #ffffff">
+                <button class="imageButton" onclick="previousImage()">이전</button>
+                Round
+                <button class="imageButton" onclick="nextImage2()">다음</button>
+            </div>
+            <div id="imageContainer">
+                <img id="currentImage" src="" alt="이미지">
+            </div>
+        </section>
+
+        <section style="width :50vw; margin: 0 30px 0 30px;">
+            <h2>팀순위</h2>
+            <table class="teamrank">
+                <thead>
+                    <tr>
+                        <th>순위</th>
+                        <th>클럽</th>
+                        <th>경기</th>
+                        <th>승</th>
+                        <th>무</th>
+                        <th>패</th>
+                        <th>득점</th>
+                        <th>실점</th>
+                        <th>득실</th>
+                        <th>승점</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/Ulsan.png">
+                            </div>
+                            <div class="teamname">울산</div>
+                        </td>
+                        <td>17</td>
+                        <td>13</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>35</td>
+                        <td>19</td>
+                        <td>16</td>
+                        <td>41</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/Pohang.png">
+                            </div>
+                            <div class="teamname">포항 스틸러스</div>
+                        </td>
+                        <td>17</td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>24</td>
+                        <td>20</td>
+                        <td>4</td>
+                        <td>30</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/Seoul.png">
+                            </div>
+                            <div class="teamname">FC 서울</div>
+                        </td>
+                        <td>17</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>28</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/Jeju.png">
+                            </div>
+                            <div class="teamname">제주 유나이티드</div>
+                        </td>
+                        <td>17</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>26</td>
+                        <td>18</td>
+                        <td>8</td>
+                        <td>28</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/Daejeon.png">
+                            </div>
+                            <div class="teamname">대전 하나 시티즌</div>
+                        </td>
+                        <td>17</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>-1</td>
+                        <td>25</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/Gwangju.png">
+                            </div>
+                            <div class="teamname">광주 FC</div>
+                        </td>
+                        <td>17</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>23</td>
+                        <td>21</td>
+                        <td>2</td>
+                        <td>24</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/Jeonbuk.png">
+                            </div>
+                            <div class="teamname">전북 현대 모터스</div>
+                        </td>
+                        <td>17</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>20</td>
+                        <td>14</td>
+                        <td>6</td>
+                        <td>24</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/Daegu.png">
+                            </div>
+                            <div class="teamname">대구 FC</div>
+                        </td>
+                        <td>17</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>-1</td>
+                        <td>24</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/Incheon.png">
+                            </div>
+                            <div class="teamname">인천 유나이티드</div>
+                        </td>
+                        <td>17</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>18</td>
+                        <td>23</td>
+                        <td>-5</td>
+                        <td>19</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/SuwonFC.png">
+                            </div>
+                            <div class="teamname">수원 FC</div>
+                        </td>
+                        <td>17</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>9</td>
+                        <td>19</td>
+                        <td>33</td>
+                        <td>-14</td>
+                        <td>18</td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td class="teamrank2" width="180px">
+                            <div class="image-logo">
+                                <img src="img/logo/Gangwon.png">
+                            </div>
+                            <div class="teamname">강원 FC</div>
+                        </td>
+                        <td>17</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>21</td>
+                        <td>-11</td>
+                        <td>12</td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td class="teamrank2">
+                            <div class="image-logo">
+                                <img src="img/logo/Suwon.png">
+                            </div>
+                            <div class="teamname">수원 삼성 블루윙스</div>
+                        </td>
+                        <td>17</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>13</td>
+                        <td>16</td>
+                        <td>30</td>
+                        <td>-14</td>
+                        <td>8</td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <td colspan="10" class="tablefoot"></td>
+                </tfoot>
+            </table>
+            </p>
+        </section>
+
+        <section style="width: 25vw;">
+            <h2>득점 순위</h2>
+            <p>
+            <table class="scoreranking">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Group</th>
+                        <th>Name</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="scorer">
+                                <img src="img/scorer/joominkyu.png" alt="img">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="logo">
+                                <img src="img/logo/Ulsan.png">
+                            </div>
+                        </td>
+                        <td>주민규</td>
+                        <td>9</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="scorer">
+                                <img src="img/scorer/nasangho.png" alt="img">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="logo">
+                                <img src="img/logo/Seoul.png">
+                            </div>
+                        </td>
+                        <td>나상호</td>
+                        <td>8</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="scorer">
+                                <img src="img/scorer/ludwigson.png" alt="img">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="logo">
+                                <img src="img/logo/Ulsan.png">
+                            </div>
+                        </td>
+                        <td>루빅손</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="scorer">
+                                <img src="img/scorer/tiago.png" alt="img">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="logo">
+                                <img src="img/logo/Daejeon.png">
+                            </div>
+                        </td>
+                        <td>티아고</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="scorer">
+                                <img src="img/scorer/vako.png" alt="img">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="logo">
+                                <img src="img/logo/Ulsan.png">
+                            </div>
+                        </td>
+                        <td>바코</td>
+                        <td>6</td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <td colspan="5" class="tablefoot"></td>
+                </tfoot>
+            </table>
+            </p>
+        </section>
+    </div>
+
+
+    <footer>
+        <div>
+            <p>&copy; 2023 태그. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script>
-        var canvas = document.getElementById("canvas");
-        var ctx = canvas.getContext("2d");
-        var canvasWidth = canvas.width;
-        var canvasHeight = canvas.height;
-        var currentIndex = 0;
-        var nextIndex = 1;
-        var imageUrls = [
-            "img/KLEAGUE_40aniv.png",
-            "img/KLEAGUE.png",
-            "img/DGmain.png",
-            "img/DJmain.png",
-            "img/Gjmain.png",
-            "img/GWmain.png",
-            "img/ICmain.png",
-            "img/Jbmain.png",
-            "img/JJmain.png",
-            "img/PHmain.png",
-            "img/Seoulmain.png",
-            "img/SFCmain.png",
-            "img/SSBmain.png",
-            "img/USmain.png"
-            // 추가 이미지 경로
+
+        var images = ["image1.jpg",
+            "image2.jpg",
+            "image3.jpg",
+            "image4.jpg",
+            "image5.jpg",
+            "image6.jpg",
+            "image7.jpg",
+            "image8.jpg",
+            "image9.jpg",
+            "image10.jpg",
+            "image11.jpg",
+            "image12.jpg",
+            "image13.jpg",
+            "image14.jpg",
+            "image15.jpg",
+            "image16.jpg",
+            "image17.jpg",
+            "image18.jpg",
+            "image19.jpg",
+            "image20.jpg",
+            "image21.jpg",
+            "image22.jpg",
+            "image23.jpg",
+            "image24.jpg",
+            "image25.jpg",
+            "image26.jpg",
+            "image27.jpg",
+            "image28.jpg",
+            "image29.jpg",
+            "image30.jpg",
+            "image31.jpg",
+            "image32.jpg",
+            "image33.jpg"
         ];
-        var transitionProgress = 0;
-        var transitionSpeed = 0.005;
-        var intervalId;
 
-        function loadImage(url) {
-            return new Promise(function (resolve, reject) {
-                var img = new Image();
-                img.onload = function () {
-                    resolve(img);
-                };
-                img.onerror = function () {
-                    reject(new Error('이미지를 로드할 수 없습니다: ' + url));
-                };
-                img.src = url;
-            });
+
+        function showImage(index) {
+            var imageElement = document.getElementById("currentImage");
+            imageElement.src = "img/schedule/" + images[index];
         }
 
-        // 이미지 변경 함수
-        function changeImage() {
-            var currentImg;
-            var nextImg;
+        var currentIndex = 0;
 
-            loadImage(imageUrls[currentIndex]).then(function (img) {
-                currentImg = img;
-                loadImage(imageUrls[nextIndex]).then(function (nextImg) {
-                    resizeCanvas(currentImg, nextImg); // 이미지 크기 조정
-                    animateTransition(currentImg, nextImg);
-                });
-            });
-        }
 
-        // 캔버스 크기 조정 함수
-        function resizeCanvas(currentImg, nextImg) {
-            canvas.width = currentImg.width; // 캔버스 너비를 현재 이미지의 너비로 설정
-            canvas.height = currentImg.height; // 캔버스 높이를 현재 이미지의 높이로 설정
-        }
 
-        // 이미지 전환 애니메이션
-        function animateTransition(currentImg, nextImg) {
-            function animate() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
+        function adjustImageSize() {
+            var imageContainer = document.getElementById("imageContainer");
+            var imageElement = document.getElementById("currentImage");
+            var containerWidth = imageContainer.clientWidth;
+            var containerHeight = imageContainer.clientHeight;
 
-                // 현재 이미지 그리기
-                ctx.globalAlpha = 1 - transitionProgress;
-                ctx.drawImage(currentImg, 0, 0, canvas.width, canvas.height);
+            var image = new Image();
+            image.src = imageElement.src;
 
-                // 다음 이미지 그리기
-                ctx.globalAlpha = transitionProgress;
-                ctx.drawImage(nextImg, 0, 0, canvas.width, canvas.height);
+            var imageWidth = image.width;
+            var imageHeight = image.height;
 
-                transitionProgress += transitionSpeed;
+            var containerAspectRatio = containerWidth / containerHeight;
+            var imageAspectRatio = imageWidth / imageHeight;
 
-                if (transitionProgress >= 1) {
-                    // 전환 완료
-                    ctx.globalAlpha = 1;
-                    ctx.drawImage(nextImg, 0, 0, canvas.width, canvas.height);
-
-                    // 전환 상태 초기화
-                    transitionProgress = 0;
-                    currentImg = nextImg;
-                    nextIndex = (nextIndex + 1) % imageUrls.length;
-                    loadImage(imageUrls[nextIndex]).then(function (img) {
-                        nextImg = img;
-                    });
-                }
-
-                // 애니메이션 반복
-                requestAnimationFrame(animate);
+            if (containerAspectRatio > imageAspectRatio) {
+                imageElement.style.width = "100%";
+                imageElement.style.height = "auto";
+            } else {
+                imageElement.style.width = "auto";
+                imageElement.style.height = "100%";
             }
-
-            animate();
         }
 
-        // 다음 이미지로 이동
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % imageUrls.length;
-            nextIndex = (currentIndex + 1) % imageUrls.length;
-            changeImage();
+        function previousImage() {
+            if (currentIndex === 0) {
+                currentIndex = images.length - 1;
+            } else {
+                currentIndex--;
+            }
+            showImage(currentIndex);
+            adjustImageSize();
         }
 
-        // 이전 이미지로 이동
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + imageUrls.length) % imageUrls.length;
-            nextIndex = (currentIndex + 1) % imageUrls.length;
-            changeImage();
+        function nextImage2() {
+            if (currentIndex === images.length - 1) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+            showImage(currentIndex);
+            adjustImageSize();
         }
 
-        // 자동으로 이미지 변경
-        function startAutoSlide() {
-            intervalId = setInterval(function () {
-                nextImage();
-            }, 2000); // 3초마다 다음 이미지로 이동
-        }
+        // 페이지 로드 시 첫 번째 이미지 표시
+        showImage(currentIndex);
+        adjustImageSize();
 
-        // 정지 버튼 클릭 시 자동 슬라이드 중지
-        function stopAutoSlide() {
-            clearInterval(intervalId);
-            intervalId = null; // intervalId 재할당
-        }
-
-        // 초기 이미지 표시
-        changeImage();
-
-        // 이전/다음 버튼 클릭 이벤트 처리
-        document.getElementById("prevButton").addEventListener("click", prevImage);
-        document.getElementById("nextButton").addEventListener("click", nextImage);
-        document.getElementById("stopButton").addEventListener("click", stopAutoSlide);
     </script>
+</body>
 
-
-    
 </html>
